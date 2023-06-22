@@ -486,6 +486,10 @@ footer{
   border-top: 1px solid #f0f0f0
 }
 
+.dark-mode footer{
+border-top: 1px solid #1f1f1f;
+}
+
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
