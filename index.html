@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/tooplate-style.css">
    
   </head>
-  <body>
+  <body oncontextmenu="return false">
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
@@ -239,6 +239,22 @@
           </div>
      </footer>
 
+     <script>
+      document.onkeydown = function(e){
+        if(event.keyCode == 123){
+          return false
+        } 
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+          return false
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+          return false
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+          return false
+        }
+      }
+     </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
